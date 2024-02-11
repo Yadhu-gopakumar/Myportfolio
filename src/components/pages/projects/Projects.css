@@ -1,0 +1,329 @@
+#projects {
+    padding-top: 10px;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 5vh;
+}
+
+.portfoliotext {
+    color: rgba(1, 0, 0, 0.685);
+    margin: 10px auto;
+}
+
+.ptabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 75vw;
+}
+
+.ptab {
+    width: 22%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ptablist {
+    width: 60vw;
+}
+
+.react-tabs__tab--selected::before {
+    left: 0;
+    height: 4px;
+    border-radius: 8px;
+}
+
+
+.ptabs {
+    height: fit-content;
+}
+
+
+/*  cards  */
+
+
+.product--card-box {
+    color: black;
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.product--card-box:hover {
+    .product-information {
+        transform: translateY(0);
+    }
+
+    .product-overlay {
+        height: 150%;
+    }
+}
+
+.product-information {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+    padding: 0 20px;
+    z-index: 2;
+    height: 100%;
+    transform: translateY(80%);
+    transition: all 300ms;
+}
+
+.product-title {
+    width: 100%;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-top: 20px;
+    color: white
+}
+
+.product-explanation {
+    width: 100%;
+    font-size: 2rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.product-detail-link {
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 30px;
+    transition: all 300ms;
+}
+
+.product-detail-link:hover {
+    padding-left: 20px;
+}
+
+
+
+.product-overlay {
+    position: absolute;
+   border: 1px solid grey;
+    background: linear-gradient(0deg, rgb(140, 42, 252) 0%, rgba(108, 0, 232, 0.041) 100%);
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    z-index: 1;
+    transition: all 300ms;
+
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.product-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+
+.grid-wrapper {
+    display: grid;
+    gap: 30px;
+    max-width: 80vw;
+    grid-template-columns: repeat(auto-fill, 300px);
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.grid-wrapper li {
+    background-color: #7a7a7a;
+    color: #ffffff;
+    font-size: 24px;
+    list-style-type: none;
+    padding: auto 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+
+}
+
+.main-container {
+    margin: 0;
+    max-width: 100%;
+    padding: auto;
+
+}
+
+
+
+
+@media screen and (max-width:600px) {
+
+    .ptabs,
+    .ptablist {
+        width: 80vw;
+    }
+
+}
+
+
+
+
+
+/* Float three columns side by side */
+.column {
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 700px) {
+    
+   .container{
+    width: 100%;
+  }
+    
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+   
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    height: 33vh;
+    text-align: center;
+    background-color: #fff;
+    border-radius:10px;
+    cursor:pointer;
+  }
+  .card .profile{
+     border-radius:10px;
+     transition: 0.2s;
+  }
+  .card:hover .profile{
+    transform:scale(1.4);
+    border-top-right-radius:50px;
+    border-top-left-radius:50px;
+  }
+  
+  .card .content{
+    width:100%;
+    height:100%;
+    position:relative;
+    overflow:hidden;
+  }
+  .card .content .back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: #f1f1f1e6;
+    transition:1s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index:1;
+    padding:10px;
+  }
+  
+  .from-left{
+    top:0;
+    left:-100%;
+  }
+  .card:hover .content .from-left {
+     left:0%;
+  }
+  
+  .from-bottom{
+    top:100%;
+    left:0;
+  }
+  .card:hover .content .from-bottom {
+     top:0%;
+  }
+  
+  .from-right{
+    top:0%;
+    right:-100%;
+  }
+  .card:hover .content .from-right {
+     right:0;
+  }
+  
+  .card .content .back h3{
+    font-size:15px;
+    letter-spacing:2px;
+  }
+  .card .content .back .tem-img{
+    border-radius:100%;
+  }
+  
+  .card .content .back .des{
+    font-size:13px;
+    padding:20px 0px;
+  }
+  .card .content .back .social-icon{
+    list-style:none;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    margin:0px;
+    padding:0px;
+  
+  }
+  .card .content .back .social-icon li{
+    display:inline-block;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    
+  }
+  
+  .card .content .back .social-icon li a{
+    display:block;
+    background:#ffffff;
+    text-align:center;
+    line-height:100%;
+    text-decoration: none;
+    border-radius:100%;
+    color: black;
+    height: 40px;
+    width: 40px;
+    display: grid;
+    place-items: center;
+  }
+  .card .content .back .social-icon li a:hover{
+    background-color:rgba(128, 128, 128, 0.301);
+  }
+  

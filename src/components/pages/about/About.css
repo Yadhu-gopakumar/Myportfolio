@@ -1,0 +1,147 @@
+
+#about {
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutleft,
+.aboutright {
+    width: 40vw;
+    height: inherit;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.aboutleft {
+    display: flex;
+    object-fit: cover;
+
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.aboutheading {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.aboutleft>img{
+    object-fit: cover;
+    /* height: 85%; */
+    width: 100%;
+}
+
+.aboutcontents {
+    color: rgb(68, 68, 68);
+}
+
+.resbtn {
+    width: 130px;
+    padding: 7px;
+    margin-left: 5px;
+}
+
+.tabs { 
+    margin-top: 40px;
+    height: 50vh;
+}
+.tab{
+    padding: 5px 0;
+    border: none;
+    outline: none;
+}
+
+.tablist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+
+}
+.react-tabs__tab--selected{
+    color: rgb(141, 1, 255);
+    position: relative;
+
+}
+.react-tabs__tab--selected::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 3px;
+    background-color: blueviolet;
+    bottom: 0;
+}
+.tabpanel,.tabpanelcontent{
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: max-content;
+}
+.tabpanelcontent{
+    margin-top: 35px;
+}
+.tabpanelcontent>.item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 5px 0;  
+}
+.heading{
+    font-size: 16px;
+}
+.subheading{
+    font-size: 13px;
+    margin-top: 4px;
+    color: rgba(0, 0, 0, 0.632);
+}
+* ::marker{
+content: '';
+}
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    #about {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .aboutright {
+        width: 80vw;
+        margin-top: 20px;
+    }
+
+    .aboutleft {
+        width: 80vw;
+    margin: 0;
+    }
+    
+.aboutleft>img{
+    width: 80vw;
+
+}
+    .aboutheading {
+        font-size: 26px;
+        object-fit: cover;
+        /* margin-bottom: 20px; */
+    }
+
+    .aboutcontents {
+        font-size: 15px;
+    }
+  
+}
+
+
