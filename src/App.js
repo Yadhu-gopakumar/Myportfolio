@@ -12,7 +12,7 @@ const App = () => {
     setScreenLoading(true);
     setTimeout(() => {
       setScreenLoading(false);
-    }, 1300);
+    }, 2000);
   }, []);
 
   const Loader = () => {
