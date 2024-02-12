@@ -9,10 +9,11 @@ import { useEffect, useState } from 'react';
 const App = () => {
   const [screenLoading, setScreenLoading] = useState(false);
   useEffect(() => {
+window.onload=()=>{
     setScreenLoading(true);
     setTimeout(() => {
       setScreenLoading(false);
-    }, 2000);
+    }, 2000);}
   }, []);
 
   const Loader = () => {
