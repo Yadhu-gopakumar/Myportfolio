@@ -93,7 +93,7 @@ const About = () => {
                             </div>
                             <div className="item">
                                 <div className="heading">Higher Secondary Education</div>
-                                <div className="subheading">T.H.S.S Mallappally :2028-2020</div>
+                                <div className="subheading">T.H.S.S Mallappally :2018-2020</div>
                             </div>
                             <div className="item">
                                 <div className="heading">High School</div>
