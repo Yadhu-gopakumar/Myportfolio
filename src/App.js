@@ -7,10 +7,10 @@ import Footer from './components/navbar/Footer';
 import "./components/Loader.css"
 import { useEffect, useState } from 'react';
 const App = () => {
-  const [screenLoading, setScreenLoading] = useState(false);
+  const [screenLoading, setScreenLoading] = useState(true);
   useEffect(() => {
 
-    setScreenLoading(true);
+    useEffect(() => {
     setTimeout(() => {
       setScreenLoading(false);
     }, 2000);
@@ -25,10 +25,13 @@ const App = () => {
   }
 
   return (
-    <>
-      {screenLoading ? (
-        <Loader />
-      ) : (
+   <div className={screenLoading ? 'app hidden' : 'app'}>
+      {screenLoading && (
+        <div className="preloaderbody">
+          <div className="circle"></div>
+        </div>
+      )}
+      {!screenLoading && (
         <>
           <Navbar />
           <Home />
@@ -38,7 +41,7 @@ const App = () => {
           <Footer />
         </>
       )}
-    </>
+    </div>
   );
 }
 
