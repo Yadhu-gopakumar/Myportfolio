@@ -3,7 +3,7 @@ import './About.css';
 import avatar from "../../assets/avatar1.png";
 import { FaDownload } from "react-icons/fa6";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import resume from '../../assets/resume2024.pdf';
+import resume from '../../assets/Resume2024.pdf';
 import Tilt from 'react-parallax-tilt';
 
 
