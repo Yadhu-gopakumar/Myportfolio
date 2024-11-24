@@ -9,7 +9,7 @@ import lucidia from "../../assets/lucidia.png"
 import weather from "../../assets/weather.png"
 import tictactoe from "../../assets/tictactoe.png"
 import chatbot from "../../assets/chatbot.png"
-import sportzone from "../../assets/sportzone.png"
+import sportzone from "../../assets/sportzone.jpg"
 
 
 
