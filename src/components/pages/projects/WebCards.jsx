@@ -9,6 +9,7 @@ import lucidia from "../../assets/lucidia.png"
 import weather from "../../assets/weather.png"
 import tictactoe from "../../assets/tictactoe.png"
 import chatbot from "../../assets/chatbot.png"
+import sportzone from "../../assets/sportzone.png"
 
 
 
@@ -28,7 +29,7 @@ let items = [
         explanation: "Turf ground booking system with django,includes 3 modules customer,turfowner and admin",
         link2: "https://sportzone.pythonanywhere.com/",
         link1: "https://github.com/Yadhu-gopakumar/turf.git",
-        url: Sport-zone
+        url: sportzone
     },
     {
         title: "Ecommerse App",
