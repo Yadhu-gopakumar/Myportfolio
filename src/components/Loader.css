@@ -1,4 +1,4 @@
-.preloaderbody {
+/* .preloaderbody {
     position: fixed;
     top: 0;
     left: 0;
@@ -59,4 +59,37 @@
         border-right-color: #6803f4;
         border-bottom-color: #6803f4;
     }
+}
+ */
+
+/* Loader.css */
+.preloaderbody {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* Match your app's background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #3498db; /* Adjust color */
+  border-top: 5px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
