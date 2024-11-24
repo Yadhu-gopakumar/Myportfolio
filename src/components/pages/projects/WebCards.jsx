@@ -22,6 +22,14 @@ let items = [
         link2: "https://lucidia.pythonanywhere.com/",
         url: lucidia
     },
+     {
+        title: "Sport-zone",
+        name: "Turf booking system",
+        explanation: "Turf ground booking system with django,includes 3 modules customer,turfowner and admin",
+        link2: "https://sportzone.pythonanywhere.com/",
+        link1: "https://github.com/Yadhu-gopakumar/turf.git",
+        url: Sport-zone
+    },
     {
         title: "Ecommerse App",
         name: "Ecommerse App",
