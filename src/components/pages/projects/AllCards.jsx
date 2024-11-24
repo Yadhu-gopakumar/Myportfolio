@@ -11,7 +11,7 @@ import tictactoe from "../../assets/tictactoe.png"
 import chatbot from "../../assets/chatbot.png"
 import qr from "../../assets/qr.webp"
 import calc from "../../assets/calc.webp"
-
+import sportzone from "../../assets/sportzone.jpg"
 
 
 let items = [
@@ -22,6 +22,14 @@ let items = [
         link1: "https://github.com/Yadhu-gopakumar/Lucidia.git",
         link2: "https://lucidia.pythonanywhere.com/",
         url: lucidia
+    },
+      {
+        title: "Sport-zone",
+        name: "Turf booking system",
+        explanation: "Turf ground booking system with django,includes 3 modules customer,turfowner and admin",
+        link2: "https://sportzone.pythonanywhere.com/",
+        link1: "https://github.com/Yadhu-gopakumar/turf.git",
+        url: sportzone
     },
     {
         title: "Ecommerse App",
