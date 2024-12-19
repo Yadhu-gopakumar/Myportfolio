@@ -30,6 +30,6 @@
 }
 
 .app.hidden {
-  visibility: hidden;
+  visibility: visible;
 }
 
