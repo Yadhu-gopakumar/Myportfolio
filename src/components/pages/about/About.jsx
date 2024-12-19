@@ -99,10 +99,7 @@ const About = () => {
                                 <div className="heading">High School</div>
                                 <div className="subheading">N.S.S.H.S Kunnam </div>
                             </div>
-                            <div className="item">
-                                <div className="heading">Programming languages</div>
-                                <div className="subheading">Python,C,C++,Java</div>
-                            </div>
+                            
                         </div>
                     </TabPanel>
                 </Tabs>
