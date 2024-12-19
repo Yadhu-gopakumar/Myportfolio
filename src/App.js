@@ -1,13 +1,12 @@
+import { useEffect, useState } from 'react';
 import Home from './components/pages/home/Home';
 import About from './components/pages/about/About';
 import Projects from './components/pages/projects/Projects';
 import Contact from './components/pages/contact/Contact';
 import Navbar from './components/navbar/Navbar';
-import Footer from './components/navbar/Footer'; 
+import Footer from './components/navbar/Footer';
 
-
-import "./components/Loader.css";
-import { useEffect, useState } from 'react';
+import './components/Loader.css';
 
 const App = () => {
   const [screenLoading, setScreenLoading] = useState(true);
@@ -17,12 +16,11 @@ const App = () => {
       setScreenLoading(false);
     }, 2000);
 
-    // Cleanup timer on unmount
-    return () => clearTimeout(timer);
+    return () => clearTimeout(timer); // Cleanup timer on unmount
   }, []);
 
   return (
-    <div className={screenLoading ? 'app hidden' : 'app'}>
+    <div className={`app ${screenLoading ? 'hidden' : ''}`}>
       {screenLoading ? (
         <div className="preloaderbody">
           <div className="circle"></div>
