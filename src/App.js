@@ -3,7 +3,9 @@ import About from './components/pages/about/About';
 import Projects from './components/pages/projects/Projects';
 import Contact from './components/pages/contact/Contact';
 import Navbar from './components/navbar/Navbar';
-import Footer from './components/footer/Footer'; // Adjusted path for Footer
+import Footer from './components/footer/Footer'; 
+
+
 import "./components/Loader.css";
 import { useEffect, useState } from 'react';
 
