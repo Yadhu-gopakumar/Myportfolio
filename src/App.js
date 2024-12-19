@@ -14,7 +14,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setScreenLoading(false);
-    }, 80000);
+    }, 3000);
 
     return () => clearTimeout(timer); // Cleanup timer on unmount
   }, []);
