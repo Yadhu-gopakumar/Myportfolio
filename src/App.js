@@ -3,7 +3,7 @@ import About from './components/pages/about/About';
 import Projects from './components/pages/projects/Projects';
 import Contact from './components/pages/contact/Contact';
 import Navbar from './components/navbar/Navbar';
-import Footer from './components/Navbar/Footer'; 
+import Footer from './components/navbar/Footer'; 
 
 
 import "./components/Loader.css";
